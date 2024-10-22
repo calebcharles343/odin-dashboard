@@ -4,9 +4,9 @@ const div1 = document.querySelector(".div-1");
 const div2 = document.querySelector(".div-2");
 const div3 = document.querySelector(".div-3");
 const div4 = document.querySelector(".div-4");
-const isHidden = window.getComputedStyle(navBar).display === "none";
 
 function toggleNavBar() {
+  const isHidden = window.getComputedStyle(navBar).display === "none";
   // nav.classList.toggle("active");
   div1.classList.toggle("logoActive");
   div2.classList.toggle("logoActive");
@@ -44,10 +44,3 @@ function handleOutsideClick(event) {
 window.addEventListener("resize", () => {
   location.reload();
 });
-/* 
-  width: 20rem;
-    position: absolute;
-
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    z-index: 80000;
-*/
