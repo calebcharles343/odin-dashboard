@@ -1,2 +1,158 @@
-@media (max-width: 34em) {
+/* Media Query for max-width 1600px */
+@media (max-width: 1600px) {
+  #nav-bar {
+    gap: 3rem;
+    padding: 1.5rem;
+  }
+  .header {
+    padding: 1.5rem 4rem;
+  }
+  .profile-section {
+    padding: 1.5rem 4rem;
+  }
+  .content-container {
+    gap: 3rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Media Query for max-width 1400px */
+@media (max-width: 1400px) {
+  .logo-container span {
+    font-size: 2rem;
+  }
+
+  .profile-info-container {
+    width: 100%;
+  }
+  .content-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Media Query for max-width 1250px */
+@media (max-width: 1250px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+
+  .profile-action-btn {
+    padding: 1rem 2rem;
+  }
+  .profile-action-container {
+    justify-content: center;
+  }
+  .content-container {
+    padding: 1rem;
+  }
+  .aside {
+    padding-right: 2rem;
+  }
+}
+
+/* Media Query for max-width 1024px */
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .main-content {
+    position: relative;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  .profile-name {
+    display: none;
+  }
+
+  .nav-toggle-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .div-1.logoActive {
+    background-color: #ffffff;
+  }
+  .div-2.logoActive {
+    background-color: #ffffff;
+  }
+  .div-3.logoActive {
+    background-color: #ffffff;
+  }
+  .div-4.logoActive {
+    background-color: #ffffff;
+  }
+
+  .logo-div {
+    background-color: #1992d4;
+  }
+
+  .nav.active {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .profile-section {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  .profile-action-btn {
+    padding: 0.8rem 1.2rem;
+  }
+  .content-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .projects-container {
+    gap: 2rem;
+  }
+  .aside {
+    padding-right: 1rem;
+  }
+}
+
+/* Media Query for max-width 724px */
+@media (max-width: 725px) {
+  html {
+    font-size: 50%;
+  }
+  .search-bar,
+  .signIn-info,
+  .profile-info-container,
+  .profile-action-container {
+    padding: 0 2rem;
+  }
+
+  .profile-text h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Media Query for max-width 724px */
+
+@media (max-width: 550px) {
+  .profile-section {
+    flex-direction: column;
+  }
+
+  .profile-action-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .profile-text p {
+    font-size: 1.8rem;
+  }
+  .profile-text {
+    flex-direction: row;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 }
