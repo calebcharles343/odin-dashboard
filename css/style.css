@@ -33,19 +33,21 @@
   gap: 0.4rem;
   height: 4rem;
 }
-
+/* 
 .logo-div {
   background-color: #ffffff;
-}
+} */
 
 .div-1,
 .div-4 {
+  background-color: #ffffff;
   height: 2rem;
   width: 100%;
 }
 
 .div-2,
 .div-3 {
+  background-color: #ffffff;
   height: 1rem;
   width: 100%;
 }

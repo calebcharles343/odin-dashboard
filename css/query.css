@@ -140,8 +140,7 @@
     flex-direction: column;
   }
 
-  .profile-action-container,
-  .profile-info-container {
+  .profile-action-container {
     justify-content: center;
     width: 100%;
   }
