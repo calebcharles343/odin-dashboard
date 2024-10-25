@@ -89,10 +89,6 @@
     cursor: pointer;
   }
 
-  .logo-div {
-    background-color: #1992d4;
-  }
-
   .profile-section {
     padding: 2rem;
     gap: 2rem;
@@ -121,7 +117,7 @@
   }
   .project-list {
     gap: 2rem;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
 
   .project-item {
@@ -139,6 +135,9 @@
   .profile-info-container,
   .profile-action-container {
     padding: 0 2rem;
+  }
+  .project-list {
+    grid-template-columns: 1fr;
   }
 
   .profile-text h1 {
