@@ -25,9 +25,9 @@ Paragraph default: 1.6
  - 0.75px;
 
 02 COLORS
--Primary: #1F2937
--Secondary: #F9FAF8, #E5E7EB, #3882F6
--shades: #E5E7EB
+-Primary: #1992d4, #f0b428
+-Secondary: #e2e8f0,
+-shades: 
 #45260a
 
 -accents:
@@ -100,28 +100,4 @@ legend {
   display: grid;
   grid-template-columns: minmax(20rem, 25rem) 1fr;
   overflow-y: scroll;
-}
-
-/* /////////////////////// */
-/* GANERAL CSS */
-/* /////////////////////// */
-/*
-p,
-a {
-   font-size: 1.2rem;
-  line-height: 1.4;
-}
-*/
-
-.btn-link:link,
-.btn-link:visited {
-  display: inline-block;
-  padding: 1rem 4rem;
-  border-radius: 50px;
-  transition: all 03;
-}
-
-.btn-link:hover,
-.btn-link:active {
-  transform: scale(1.05);
 }

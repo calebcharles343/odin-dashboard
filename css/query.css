@@ -64,6 +64,15 @@
     display: none;
   }
 
+  #nav-bar-hidden {
+    display: none;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
   .profile-name {
     display: none;
   }
@@ -74,31 +83,13 @@
     border: none;
     cursor: pointer;
   }
-  .div-1.logoActive {
-    background-color: #ffffff;
-  }
-  .div-2.logoActive {
-    background-color: #ffffff;
-  }
-  .div-3.logoActive {
-    background-color: #ffffff;
-  }
-  .div-4.logoActive {
-    background-color: #ffffff;
-  }
 
   .logo-div {
     background-color: #1992d4;
   }
 
-  .nav.active {
-    display: none;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
   .profile-section {
-    padding: 1rem 2rem;
+    padding: 2rem;
     gap: 2rem;
   }
   .profile-action-btn {
@@ -113,6 +104,12 @@
   }
   .aside {
     padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #nav-bar {
+    position: relative;
   }
 }
 

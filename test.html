@@ -1,0 +1,90 @@
+<div class="layout">
+  <header>
+    <button id="nav-toggle" class="nav-toggle">
+      <svg
+        class="search-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+        />
+      </svg>
+      <!-- Wrap logo inside the button -->
+    </button>
+    <p>HEADER</p>
+  </header>
+
+  <nav class="nav-1">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <h1>Welcome to the Main Content Area</h1>
+  </div>
+</div>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  .nav-1 {
+    background-color: lightblue;
+    padding: 20px;
+  }
+  .main-content {
+    background-color: lightgray;
+    padding: 20px;
+  }
+  .nav-toggle {
+    display: none; /* Hidden by default, visible only on small screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .nav-toggle img {
+    width: 500px; /* Adjust size of logo */
+  } /* Media query to hide nav-1 and show the
+        toggle button at max-width 1024px */
+
+  @media (max-width: 1024px) {
+    .nav-1 {
+      display: none; /* Hide the nav by default */
+    }
+    .nav-toggle {
+      display: inline-block; /* Show toggle button */
+    }
+    .layout {
+      grid-template-columns: 1fr;
+      /* Single column layout */
+    }
+  } /* Media query to reset nav-1 visibility above
+              1024px */
+  @media (min-width: 1025px) {
+    .nav-1 {
+      display: block; /* Show the nav
+                in its regular position */
+      position: relative; /* Ensure relative positioning
+                for larger screens */
+    }
+  }
+</style>
+
+<script>
+  // Toggle navigation visibility
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    const nav = document.querySelector(".nav-1");
+    if (nav.style.display === "block") {
+      nav.style.display = "none"; // Hide if already visible
+    } else {
+      nav.style.display = "block"; // Show if hidden
+    }
+  });
+</script>

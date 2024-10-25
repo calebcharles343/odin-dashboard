@@ -11,6 +11,16 @@
   z-index: 8000;
 }
 
+#nav-bar-hidden {
+  display: none;
+  flex-direction: column;
+  gap: 4rem;
+  color: #ffffff;
+  background-color: #1992d4;
+  padding: 2rem;
+  z-index: 8000;
+}
+
 /* Logo */
 .logo-container {
   display: flex;
@@ -82,6 +92,10 @@
 /* /////////////////////////// */
 /* MAIN CONTENT */
 /* /////////////////////////// */
+
+.main {
+  position: relative;
+}
 
 /* Header */
 .header {
@@ -223,7 +237,7 @@
   padding: 2rem;
 }
 
-.projects-container {
+.project-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -235,7 +249,7 @@
 }
 
 /* Project */
-.project {
+.project-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
