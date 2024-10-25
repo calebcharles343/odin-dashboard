@@ -67,6 +67,7 @@
   #nav-bar-hidden {
     display: none;
     position: absolute;
+    height: 100vh;
 
     top: 0;
     left: 0;
