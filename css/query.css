@@ -34,7 +34,7 @@
 /* Media Query for max-width 1250px */
 @media (max-width: 1250px) {
   .header {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
 
   .profile-action-btn {
@@ -77,6 +77,10 @@
     display: none;
   }
 
+  .profile-img-tab {
+    margin-right: -40px;
+  }
+
   .nav-toggle-btn {
     display: block;
     background-color: transparent;
@@ -92,32 +96,43 @@
     padding: 2rem;
     gap: 2rem;
   }
+  .profile-action-container {
+    margin-right: 2rem;
+  }
   .profile-action-btn {
-    padding: 0.8rem 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content h3 {
+    font-size: 3rem;
+    padding: 1rem 0;
   }
   .content-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 4rem;
   }
-  .projects-container {
+  .project-list {
     gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .project-item {
+    max-width: 60rem;
   }
   .aside {
     padding-right: 1rem;
   }
 }
 
-@media (min-width: 1025px) {
-  #nav-bar {
-    position: relative;
-  }
-}
-
 /* Media Query for max-width 724px */
-@media (max-width: 725px) {
-  html {
-    font-size: 50%;
-  }
+@media (max-width: 835px) {
   .search-bar,
   .signIn-info,
   .profile-info-container,
@@ -128,11 +143,15 @@
   .profile-text h1 {
     font-size: 1.8rem;
   }
+
+  .profile-img-tab {
+    margin-right: 0;
+  }
 }
 
 /* Media Query for max-width 724px */
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .profile-section {
     flex-direction: column;
   }
